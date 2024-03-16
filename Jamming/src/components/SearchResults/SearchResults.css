@@ -1,0 +1,37 @@
+.SearchResults {
+  width: 32vw;
+  height: 90vh;
+  overflow-y: scroll;
+  padding: 0.88rem;
+  background-color: rgba(255, 187, 127, 0.653);
+  box-shadow: 0 4px 2px 2px #ffb46257;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+h2 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+h2:hover {
+  background-color: rgba(255, 187, 127, 0.653);
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+@media only screen and (max-width: 1020px) {
+  .SearchResults {
+    width: 90vw;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+}
+
