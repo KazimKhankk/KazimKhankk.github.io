@@ -58,6 +58,7 @@
 .SearchButton:active {
   background-color: #ffb46257;
   border: 2px solid rgba(255, 186, 127, 1);
+  color: #000;
 }
 
 
