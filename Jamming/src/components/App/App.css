@@ -12,6 +12,7 @@
 
 * {
   box-sizing: border-box;
+  background-color: #000000;
 }
 
 body,
@@ -26,7 +27,8 @@ header {
   margin: 0;
   padding: 0;
   background-color: rgba(1, 12, 63, 0.7);
-  box-shadow: 0 4px 2px 2px #000000;
+  box-shadow: 0 4px 2px 2px #000000; 
+  border-radius: 10px;
 }
 
 html {
@@ -45,12 +47,14 @@ h2 {
   line-height: var(--heading-line-height);
   letter-spacing: var(--heading-letter-spacing);
   font-family: var(--heading-font);
+  background-color: #000000;
 }
 
 h1 {
   font-size: var(--heading-1-size);
   color: var(--heading-color);
   animation: blinker 1.5s ease-in-out infinite;
+  background-color: #000000;
 }
 
 @keyframes blinker {
@@ -67,6 +71,7 @@ h1 {
 
 h2 {
   font-size: var(--heading-2-size);
+  background-color: #000000;
 }
 
 .App {
@@ -103,3 +108,8 @@ h2 {
   }
 }
 
+#background{
+  height: 100%;
+  color: #000000;
+  background-color: #000000;
+}

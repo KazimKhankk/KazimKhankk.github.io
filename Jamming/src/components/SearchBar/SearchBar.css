@@ -26,6 +26,8 @@
 
 .SearchBar input::placeholder {
   color: rgba(255, 186, 127, 0.5);
+  transition: ease-in-out 1s;
+  transition-delay: 35ms;
 }
 
 .SearchButton {

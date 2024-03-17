@@ -49,6 +49,7 @@
 .Playlist-save:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: palegoldenrod;
+  transition-delay: 1s;
 }
 
 ::-webkit-scrollbar {

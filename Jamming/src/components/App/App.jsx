@@ -46,7 +46,7 @@ const App = () => {
   return (
     <div>
       <h1>
-        Ja<span className="highlight">mmm</span>ing
+        Ja<span className="highlight" id="background">mmm</span>ing
       </h1>
       <div className="App">
         <SearchBar
