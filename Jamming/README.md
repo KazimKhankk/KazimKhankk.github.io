@@ -31,4 +31,3 @@ A web application that allows users to search for songs by title and see informa
 * Implement pagination for search results.
 
 This project is still under work and is not yet complete.
-
