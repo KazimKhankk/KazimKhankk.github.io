@@ -4,15 +4,14 @@
   --heading-2-size: 1.5rem;
   --heading-line-height: 1.2;
   --heading-letter-spacing: 2px;
-  --heading-color: rgba(0, 0, 0, 0.7);
-  --heading-highlight-color: rgba(255, 186, 127, 1);
+  --heading-color: #d19e2f;
+  --heading-highlight-color: #ffb462;
   --heading-font: "Poppins", sans-serif;
   --background-image: url("./1920x1080_px_Dark_Evening_New_York_City_Street_Light_town-1402591.jpg");
 }
 
 * {
   box-sizing: border-box;
-  background-color: #000000;
 }
 
 body,
@@ -26,8 +25,8 @@ html,
 header {
   margin: 0;
   padding: 0;
-  background-color: rgba(1, 12, 63, 0.7);
-  box-shadow: 0 4px 2px 2px #000000; 
+  /* background-color: rgba(1, 12, 63, 0.7); */
+  box-shadow: 0 4px 2px 2px #000000;
   border-radius: 10px;
 }
 
@@ -36,42 +35,52 @@ html {
 }
 
 .highlight {
-  color: rgba(255, 186, 127, 1);
+  color: var(--heading-highlight-color);
 }
 
 h1,
 h2 {
   margin: 12px 12px 12px 12px;
   text-align: center;
-  border-color: #ffb46257;
+  border-color: #ffb36279;
   line-height: var(--heading-line-height);
   letter-spacing: var(--heading-letter-spacing);
   font-family: var(--heading-font);
-  background-color: #000000;
 }
 
 h1 {
   font-size: var(--heading-1-size);
   color: var(--heading-color);
   animation: blinker 1.5s ease-in-out infinite;
-  background-color: #000000;
+  background-image: linear-gradient(
+    to right,
+    #000000 25%,
+    var(--heading-highlight-color) 25%,
+    var(--heading-highlight-color) 50%,
+    #000000 50%
+  );
+  background-size: 200% 100%;
+  background-position: 0% 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Standard property for compatibility */
+  animation-fill-mode: both;
 }
 
 @keyframes blinker {
   0% {
-    color: var(--heading-color);
+    background-position: 0% 50%;
   }
   50% {
-    color: var(--heading-highlight-color);
+    background-position: 100% 50%;
   }
   100% {
-    color: var(--heading-color);
+    background-position: 0% 50%;
   }
 }
 
 h2 {
   font-size: var(--heading-2-size);
-  background-color: #000000;
 }
 
 .App {
@@ -86,7 +95,7 @@ h2 {
   background-repeat: no-repeat;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
-  color: #d19e2f;
+  color: var(--heading-color);
 }
 
 .App-playlist {
@@ -106,10 +115,4 @@ h2 {
   .App {
     padding: 0 5% 5% 5%;
   }
-}
-
-#background{
-  height: 100%;
-  color: #000000;
-  background-color: #000000;
 }

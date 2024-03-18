@@ -2,36 +2,56 @@
   width: 32vw;
   height: 90vh;
   overflow-y: scroll;
-  padding: 0.88rem;
-  background-color: rgba(255, 187, 127, 0.653);
-  box-shadow: 0 4px 2px 2px #ffb46257;
+  padding: 1.14rem;
+  background-color: rgba(255, 179, 98, 0.7);
+  box-shadow: 0 4px 2px 2px rgba(255, 179, 98, 0.453);
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
 }
 
 h2 {
-  color: black;
+  color: rgba(0, 0, 0, 0.7);
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease-in-out;
 }
 
 h2:hover {
-  background-color: rgba(255, 187, 127, 0.653);
+  background-color: rgba(240, 233, 228, 0.7);
   border-radius: 10px;
-  padding: 10px;
+  padding: 1.14rem;
   text-decoration: underline;
+  animation: neon 1.5s ease-in-out infinite alternate;
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
+.glow {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.1) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 40px 40px;
+  animation: neon 1.5s ease-in-out infinite alternate;
 }
 
-@media only screen and (max-width: 1020px) {
-  .SearchResults {
-    width: 90vw;
-    border-radius: 10px;
-    margin-bottom: 2rem;
+@keyframes neon {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 40px;
   }
 }
 
+ @media only screen and (max-width: 1020px) {
+  .SearchResults {
+    width: 90vw;
+    border-radius: 10px;
+    margin-bottom: 2.22rem;
+  }
+}

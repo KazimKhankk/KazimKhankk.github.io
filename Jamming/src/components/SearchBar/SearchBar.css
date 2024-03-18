@@ -9,10 +9,10 @@
 .SearchBar input {
   width: 287px;
   padding: .88rem 1.11rem;
-  border: 2px solid rgba(255, 186, 127, 0.4);
-  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #ffb462;
+  border-radius: 10px;
   margin-bottom: 2.22rem;
-  color: #ffba7f;
+  color: #ffb462;
   font-size: 1rem;
   background-color: rgba(255, 186, 127, 0.1);
   transition: all 0.3s ease;
@@ -25,7 +25,7 @@
 }
 
 .SearchBar input::placeholder {
-  color: rgba(255, 186, 127, 0.5);
+  color: rgba(3, 1, 0, 0.5);
   transition: ease-in-out 1s;
   transition-delay: 35ms;
 }
@@ -35,7 +35,6 @@
   width: 8.11rem;
   padding: .77rem 0;
   border-radius: 54px;
-  background-color: #000;
   text-align: center;
   font-size: .833rem;
   transition: all 0.3s ease;
@@ -44,21 +43,19 @@
   font-weight: 500;
   width: 200px;
   height: 50px;
-  border: 2px solid transparent;
-  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(255, 186, 127, 0.653);
+  box-shadow: 0 4px 2px 2px #ffb46257;
 }
 
 .SearchButton:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 2px solid rgba(255, 186, 127, .7);
-  transition-delay: 10ms;
-  transition: ease-in-out .5s;
-}
-
-.SearchButton:active {
-  background-color: #ffb46257;
-  border: 2px solid rgba(255, 186, 127, 1);
+  background-color: #f2aa5cdc;
+  border: 2px solid #000000;
   color: #000;
 }
 
+.SearchButton:active {
+  background-color: #ffb462;
+  border: 2px solid #000000;
+  color: #000;
+}
 

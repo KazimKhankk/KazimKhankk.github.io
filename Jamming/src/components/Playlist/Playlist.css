@@ -14,42 +14,45 @@
 
 .Playlist input {
   width: 100%;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: .88rem 1.11rem;
+  border: 2px solid #1f1b17;
+  border-radius: 10px;
+  margin-bottom: 2.22rem;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.55rem;
-  color: rgb(3, 0, 0);
+  font-size: 1rem;
+  color: #ffb462;
+  background-color: rgba(255, 186, 127, 0.1);
   transition: all 0.3s ease;
-  color: bisque;
+  color: #000000a4;
 }
 
 .Playlist input:focus {
-  background-color: rgba(0, 0, 0, 0.65);
-  border-bottom: 1px solid rgba(53, 105, 255, 0.8);
-  border-radius: 10px;
+  outline: none;
+  border: 2px solid #0b0b0b9b;
+  box-shadow: 0px 0px 10px 0px rgb(8, 8, 8);
 }
 
 .Playlist-save {
   cursor: pointer;
-  width: 10rem;
+  width: 8.11rem;
   padding: .77rem 0;
   border-radius: 54px;
   border-width: 0px;
   margin-top: 1.27rem;
-  background-color: palegoldenrod;
+  background-color: rgba(255, 186, 127, 0.653);
+  box-shadow: 0 4px 2px 2px #ffb46257;
   text-align: center;
   font-size: .83rem;
-  transition: background-color .25s, color .25s;
-  color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+  border: 0px;
+  color: #000000c0;
   font-weight: 500;
 }
 
 .Playlist-save:hover {
   background-color: rgba(0, 0, 0, 0.8);
-  color: palegoldenrod;
-  transition-delay: 1s;
+  color: rgba(255, 255, 255, 0.8);
+  transition-delay: 100ms;
 }
 
 ::-webkit-scrollbar {
